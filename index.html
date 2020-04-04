@@ -1,0 +1,18 @@
+<textarea>
+
+</textarea>
+
+<textarea>
+
+</textarea>
+
+<script>
+let textareaTag = document.querySelector('textarea');
+let textarea2Tag = document.querySelectorAll('textarea')[1];
+
+textareaTag.addEventListener('keyup', function() {
+	let textareaValue = textareaTag.value;
+	let anotherValue = textareaValue;.replace('0', 'm').replace('1', 'j').replace('2', 'k').replace('3', 'l').replace('4', 'u').replace('5', 'i').replace('6', 'o').replace('*', 'p');
+	textarea2Tag.value = anotherValue;
+});
+</script>
